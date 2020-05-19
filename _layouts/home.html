@@ -1,75 +1,218 @@
 ---
 layout: page
 ---
+<section class="fullscreen image-bg parallax background-multiply">
+        <div class="background-image-holder">
+            <img alt="image" class="background-image" src="assets/img/background-home.jpg">
+        </div>
+        <div class="container v-align-transform">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="thin mb0">Global venture capital tech firm funding driven and innovative businesses.</h1>
+                </div>
+            </div>
 
-{{ content }}
+        </div>
 
-{% assign posts = paginator.posts | default: site.posts %}
+        <div class="align-bottom text-center">
+            <a class="btn btn-white mb32" href="#">Pitch Us</a>
+            <ul class="list-inline social-list mb24">
+                <li>
+                    <a href="#">
+                        <i class="ti-twitter-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ti-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ti-dribbble"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ti-vimeo-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section><section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase">About muellners</h6>
+                    <hr class="mb160 mb-xs-24">
+                </div>
+            </div>
 
-<div class="posts-list">
-  {% for post in posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | relative_url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="thin">Investing in innovative technology companies since '13</h1>
+                </div>
+            </div>
 
-      {% if post.subtitle %}
-        <h3 class="post-subtitle">
-        {{ post.subtitle }}
-        </h3>
-      {% endif %}
-    </a>
+            <div class="row mb160 mb-xs-0">
+                <div class="col-md-6 col-sm-8">
+                    <p class="lead">
+                        Muellners partners with passionate entrepreneurs and startups to build enduring, era-defining companies that define their categories.
+                    </p>
+                </div>
+            </div>
 
-    <p class="post-meta">
-      {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-      Posted on {{ post.date | date: date_format }}
-    </p>
+            <div class="row">
+                <div class="col-sm-4 mb-xs-24">
+                    <h1 class="large color-primary mb0">2+</h1>
+                    <h5 class="color-primary mb0">Profitable M&amp;A Ventures</h5>
+                </div>
+                <div class="col-sm-4 mb-xs-24">
+                    <h1 class="large color-primary mb0">$100K+</h1>
+                    <h5 class="color-primary mb0">Capital Invested</h5>
+                </div>
+                <div class="col-sm-4">
+                    <h1 class="large color-primary mb0">1/4</h1>
+                    <h5 class="color-primary mb0">Companies Yielding Profit</h5>
+                </div>
+            </div>
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {% assign excerpt_length = site.excerpt_length | default: 50 %}
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
+        </div>
+
+    </section><section class="image-bg overlay pt180 pb180 pt-xs-80 pb-xs-80 parallax">
+    <div class="background-image-holder">
+      <img alt="image" class="background-image" src="assets/img/background-home-2.jpg">
     </div>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+          <h2><br></h2>
+          <p class="lead mb48 mb-xs-32"><br></p>
+        </div>
+      </div>
+
     </div>
-    {% endif %}
 
-   </article>
-  {% endfor %}
-</div>
+  </section>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pagination main-pager">
-  {% if paginator.previous_page %}
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  <section class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase">Focused segment</h6>
+                    <hr class="mb160 mb-xs-24">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="thin">Social, Sustainable,Open.</h1>
+                </div>
+            </div>
+
+            <div class="row mb160 mb-xs-0">
+                <div class="col-md-6 col-sm-8">
+                    <p class="lead">
+                        Muellners maintains a portfolio spanning multiple sectors. Disruptive technology binding three fundamentals is &nbsp;our unifying theme.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-xs-24">
+                    <i class="ti-pulse icon mb32"></i>
+                    <h6 class="uppercase">Health</h6>
+                    <ul>
+                        <li>Stay Safe</li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-xs-24">
+                    <i class="icon mb32 fa fa-money"></i>
+                    <h6 class="uppercase">fintech</h6>
+                    <ul>
+                        <li>Finscale</li>
+                        <li>Bitrupee</li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-xs-24">
+                    <i class="ti-mobile icon mb32"></i>
+                    <h6 class="uppercase">Data</h6>
+                    <ul>
+                        <li>Bitcerti</li>
+                        <li>Proof.AI</li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><section class="image-bg bg-light parallax overlay pt160 pb160 pt-xs-80 pb-xs-80">
+        <div class="background-image-holder">
+            <img alt="image" class="background-image" src="assets/img/intro1.jpg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-8">
+                    <i class="ti-quote-left icon icon-sm mb16"></i>
+                    <h3 class="mb32">Muellners provided us the tools, capital and expertise we needed to launch Lookitapp to reach a global audience.</h3>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section><section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase">updates and insight</h6>
+                    <hr class="mb160 mb-xs-24">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 class="thin">@muellners</h1>
+                </div>
+            </div>
+
+            <div class="row mb160 mb-xs-0">
+                <div class="col-md-6 col-sm-8">
+                    <p class="lead">
+                        Follow us for insight about the current practices in the market</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section><section class="pt120 pb120 pt-xs-40 pb-xs-40 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+
+                    <div class="twitter-feed tweets-slider large">
+                        <div class="tweets-feed" data-feed-name="bitcoin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>

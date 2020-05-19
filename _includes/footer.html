@@ -1,38 +1,67 @@
-<footer>
-  <div class="container-md beautiful-jekyll-footer">
+
+<footer class="footer-1 bg-dark">
+  <div class="container">
     <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-      {% include social-networks-links.html %}
-      {% if page.footer-extra %}
-        <div class="footer-custom-content">
-          {% include {{ page.footer-extra }} %}
+      <div class="col-md-3 col-sm-6">
+        <img alt="Logo" class="logo" src="{{ site.title-img }}">
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="widget">
+          <h6 class="title">Recent Posts</h6>
+          <hr>
+          <ul class="link-list recent-posts">
+            <li>
+              <a href="#">Hugging pugs is super trendy</a>
+              <span class="date">February
+                <span class="number">14, 2015</span>
+              </span>
+            </li>
+            <li>
+              <a href="#">Spinning vinyl is oh so cool</a>
+              <span class="date">February
+                <span class="number">9, 2015</span>
+              </span>
+            </li>
+            <li>
+              <a href="#">Superior theme design by pros</a>
+              <span class="date">January
+                <span class="number">27, 2015</span>
+              </span>
+            </li>
+          </ul>
         </div>
-      {% endif %}
-      <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
-        &nbsp;&bull;&nbsp;
-      {% endif %}
-      {{ site.time | date: '%Y' }}
 
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
-      {% endif %}
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="widget">
+          <h6 class="title">Latest Updates</h6>
+          <hr>
+          <div class="twitter-feed">
+            <div class="tweets-feed" data-feed-name="muellnersorg" id="tweets-1">
+            </div>
+          </div>
+        </div>
 
-      {% if site.matomo %}
-        {% if site.matomo.opt-out %}
-          &nbsp;&bull;&nbsp;
-          <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
-        {% endif %}
-      {% endif%}
-      </p>
-      <!-- Please don't remove this, keep my open source work credited :) -->
-      <p class="theme-by text-muted">
-        Theme by
-        <a href="https://beautifuljekyll.com">beautiful-jekyll</a>
-      </p>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="widget">
+          <h6 class="title">Instagram</h6>
+          <hr>
+          <div class="instafeed" data-user-name="muellnersllc">
+            <ul></ul>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <span class="sub"> ©Copyright {{ site.time | date: '%Y' }}   - Muellners® Frivilig Forening,Denmark &amp; Muellners® Internet Pvt Ltd,India </span>
+      </div>
+      {% include social-networks-links.html %}
+    </div>
   </div>
+
+  <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
 </footer>
