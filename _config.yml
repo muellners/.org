@@ -14,10 +14,11 @@ author: Muellners Org
 navbar-links:
   About: "about"
   Newsroom: "newsroom"
+  CaseStudies: "casestudies"
   Products:
-    - Fintech API: "https://beautifuljekyll.com"
-    - Open Source: "https://www.markdowntutorial.com/"
-
+    - Finscale: ""
+    - Bitrupee: ""
+    - Bounties: ""
 
 # --- Logo --- #
 
@@ -32,6 +33,7 @@ round-avatar: true
 # then specify the following parameter
 title-img: "/assets/img/logo_final_light.png"
 title-img-black: "/assets/img/logo_final_black.png"
+title-img-final: "/assets/img/logo_final.png"
 
 
 # --- Footer options --- #
