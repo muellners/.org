@@ -1,10 +1,10 @@
 # --- Basic options --- #
 
 # Name of website
-title: Muellners Internet
+title: Muellners Foundation
 
 # Short description of your site
-description: A global technology capital firm.
+description: A global foundation that promotes equality, transparency, and fairness .
 
 # Your name to show in the footer
 author: Muellners Org
@@ -14,11 +14,11 @@ author: Muellners Org
 navbar-links:
   About: "about"
   Newsroom: "newsroom"
-  CaseStudies: "casestudies"
-  Products:
-    - Finscale: ""
-    - Bitrupee: ""
-    - Bounties: ""
+  People: "people"
+  Manifesto:
+    - Join us: ""
+    - Governance: ""
+    - Space: ""
 
 # --- Logo --- #
 
