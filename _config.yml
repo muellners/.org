@@ -34,6 +34,7 @@ round-avatar: true
 title-img: "../assets/img/logo_final_light.png"
 title-img-black: "../assets/img/logo_final_black.png"
 title-img-final: "../assets/img/logo_final.png"
+title-img-final-home: "assets/img/logo_final.png"
 
 
 # --- Footer options --- #

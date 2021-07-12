@@ -1,0 +1,49 @@
+---
+common-css:
+  - "/assets/css/font-awesome.min.css"
+  - "/assets/css/themify-icons.css"
+  - "/assets/css/bootstrap.css"
+  - "/assets/css/flexslider.css"
+  - "/assets/css/theme.css"
+  - "/assets/css/custom.css"
+  - "/assets/css/font-roboto.css"
+common-ext-css:
+  - "https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700"
+  - "https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600"
+common-js:
+  - "/assets/js/jquery.min.js"
+  - "/assets/js/bootstrap.min.js"
+  - "/assets/js/flexslider.min.js"
+  - "/assets/js/twitterfetcher.min.js"
+  - "/assets/js/spectragram.min.js"
+  - "/assets/js/smooth-scroll.min.js"
+  - "/assets/js/parallax.js"
+  - "/assets/js/scripts.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2020 -->
+  {% include head.html %}
+
+  <body class="scroll-assist">
+
+    {% include gtm_body.html %}
+
+    {% include nav2.html %}
+
+      <div class="main-container">
+        <div>
+          <div>
+            {{ content }}
+            {% include comments.html %}
+          </div>
+        </div>
+      </div>
+
+    {% include footer.html %}
+
+    {% include footer-scripts.html %}
+
+  </body>
+</html>

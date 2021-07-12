@@ -1,0 +1,62 @@
+
+<div class="nav-container">
+{%- if page.post %}
+    <nav class="bg-dark">
+      {% else %}
+      <nav class="absolute">
+      {%- endif -%}
+        <div class="nav-bar">
+            <div class="module left">
+                <a href="{{ '' | absolute_url }}">
+                    <img class="logo logo-light" href="{{ '' | absolute_url }}" alt="{{ site.title }} Logo" src="{{ site.title-img-final-home }}">
+                    <img class="logo logo-dark" href="{{ '' | absolute_url }}" alt="{{ site.title }} Logo"  src="{{ site.title-img-final-home }}">
+                </a>
+            </div>
+            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                <i class="ti-menu"></i>
+            </div>
+            <div class="module-group right">
+                <div class="module left">
+                    <ul class="menu">
+                        {%- for link in site.navbar-links -%}
+                          {%- if link[1].first %}
+                          <li class="vpf">
+                            <a href="#">{{link[0]}}<br></a>
+                          <ul>
+                            {%- for childlink in link[1] -%}
+                              {%- for linkparts in childlink %}
+                              <li>
+                                <a href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                              </li>
+                              {%- endfor -%}
+                            {%- endfor %}
+                          </ul>
+                          {% else %}
+                          <li class="vpf">
+                           <a href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+                          </li>
+                          {%- endif -%}
+                        {%- endfor %}
+                    </ul>
+              </div>
+
+            <div class="module widget-handle language left toggle-widget-handle">
+                <ul class="menu">
+                    <li>
+                        <a href="#">ENG</a>
+                        <ul>
+                            <li>
+                                <a href="#">French</a>
+                            </li>
+                            <li>
+                                <a href="#">Deutsch</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+  </div>
+  </nav>
+  </div>
